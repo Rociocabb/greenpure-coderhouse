@@ -18,50 +18,12 @@ html {
   background-color: black;
 }
 
-/*HEADER*/
-/*Barra de navegación*/
-.menu {
-  background-color: #d0d604;
-  height: 65px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-
-.logo {
-  width: 150px;
-  padding: 0 30px;
-}
-
-.linkNav {
-  display: flex;
-}
-
-.menu a {
-  text-decoration: none;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: bold;
-  color: black;
-  width: 90%;
-  padding: 10px 10px;
-  margin: 0 20px;
-  display: block;
-}
-
-.menu a:hover {
-  background: white;
-  transition: 1s;
-}
-
 a {
   color: #e36900;
   text-decoration: underline;
 }
 
 .principalTitle {
-  text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 20px;
@@ -69,45 +31,32 @@ a {
   text-align: center;
 }
 
-/*MAIN*/
-/*Sector de imágenes y recetas*/
-
 .SectionPrincipal {
-  text-align: center;
-  margin: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
-.ConteinerRecipes {
-  margin: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 1fr;
-  gap: 50px 50px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  text-align: center;
+/*MAIN*/
+/*Sector de galería de recetas*/
+
+#galeria,
+.col-lg-4 {
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
-.ConteinerItem {
-  align-items: center;
-}
-
-img {
+#galeria img {
   width: 100%;
-  height: 100%;
+  height: 250px;
 }
 
-.StartButtom {
-  text-decoration: none;
-  margin: 20px;
+#galeria img:hover {
+  border: 5px solid black;
 }
 
 /*FOOTER*/
 .Footer {
   color: black;
-  padding: 1.5rem;
-  margin-top: 20px;
-  grid-column: 1/3;
-  height: 15px;
+  padding: 10px;
   background: linear-gradient(to right, #a3002d, #e36900, #d0d604, #145427);
 }

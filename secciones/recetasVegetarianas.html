@@ -5,6 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recetas vegetarianas</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,20 +39,50 @@
   <body class="bodyRecipes">
     <!--Barra de navegación-inicio-->
     <header class="Header">
-      <div class="headerIndex-content">
-        <nav class="menu">
-          <img class="logo" src="../Imagenes/isooriginal.png" alt="" />
-          <a class="linkNav" href="../Index.html">INICIO</a>
-          <a class="linkNav" href="Nosotros.html">NOSOTROS</a>
-          <a class="linkNav" href="Contacto.html">CONTACTO</a>
-        </nav>
-      </div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #d0d604"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../imagenes/isooriginal.png" alt="" width="120"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link active text-uppercase"
+                aria-current="page"
+                href="../index.html"
+                >Inicio</a
+              >
+              <a class="nav-link text-uppercase" href="Nosotros.html"
+                >Nosotros</a
+              >
+              <a class="nav-link text-uppercase" href="Contacto.html"
+                >Contacto</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <!--Título principal-->
-      <h1 class="principalTitle">¡Recetas vegetarianas!</h1>
+      <h1 class="principalTitle text-uppercase">¡Recetas vegetarianas!</h1>
     </header>
 
     <main class="mainRecipes">
-      <section class="SectionPrincipal">
+      <section class="SectionPrincipal" style="text-align: center">
         <!--Intro-->
         <h2>
           Aunque no estés listx para dejar las carnes, éstas recetas te van a
@@ -47,59 +98,64 @@
         </p>
       </section>
 
-      <!--RECETAS CON SUS LINKS-->
-      <section class="Conteiner">
-        <div class="ConteinerRecipes">
-          <div class="ConteinerItem">
-            <a href="../Secciones/BerenjenaRellena.html">
+      <!--FOTOS DE RECETAS CON SUS ENLACES-->
+      <section id="galeria" class="container" style="text-align: center">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="../secciones/BerenjenaRellena.html">
               <img
-                src="../Imagenes/berenjenas-rellenasvegetaokok.jpg"
-                alt=""
-              />Berenjenas rellenas.
+                src="../imagenes/berenjenas-rellenasvegetaokok.jpg"
+                alt="galeria imagen"
+              />
             </a>
+            <p>Berenjenas rellenas.</p>
           </div>
-          <div class="ConteinerItem">
-            <a id="hol" href="Ensaladaverdura.html">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="../secciones/Ensaladaverdura.html">
               <img
-                src="../Imagenes/ensalda-verduras-a-la-plancha-1.png"
+                src="../imagenes/ensalda-verduras-a-la-plancha-1.png"
                 alt=""
-              />Ensalada tibia de verduras a la plancha
+              />
             </a>
+            <p>Ensalada de verduras la plancha.</p>
           </div>
-          <div class="ConteinerItem">
-            <a href=""
-              ><img src="../Imagenes/berenj-1.png" alt="" />Berenjenas a la
-              plancha.</a
-            >
-          </div>
-          <div class="ConteinerItem">
-            <a href="TartaDeEspinaca.html"
-              ><img src="../Imagenes/oklk-800x534.jpg" alt="" />Tarta de
-              espinaca y hongos secos.
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="../secciones/">
+              <img src="../imagenes/esparragos-2ook.jpg" alt="" />
             </a>
+            <p>Espárragos gratinados.</p>
           </div>
-          <div class="ConteinerItem">
-            <a href=""
-              ><img src="../Imagenes/esparragos-2ook.jpg" alt="" />Espárragos
-              gratinados</a
-            >
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="../secciones/TartaDeEspinaca.html">
+              <img src="../imagenes/oklk-800x534.jpg" alt="" />
+            </a>
+            <p>Tarta de espinaca y hongos secos.</p>
           </div>
-          <div class="ConteinerItem">
-            <a href=""
-              ><img src="../Imagenes/P1110359.jpg" alt="" />Zapallitos rellenos
-              con arroz y verduras.</a
-            >
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="../secciones/">
+              <img src="../imagenes/P1110359.jpg" alt="" />
+            </a>
+            <p>Zapallitos rellenos.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="../secciones/">
+              <img src="../imagenes/berenj-1.png" alt="" />
+            </a>
+            <p>Berenjenas a la plancha.</p>
           </div>
         </div>
       </section>
-
-      <!--Botón de bolver a inicio-->
-      <a class="StartButtom" href="../Index.html">Volver a inicio.</a>
     </main>
 
     <!--Pie de página-->
     <footer class="Footer">
-      <p>Buenos Aires, <em>Argentina</em>- <strong>2021</strong></p>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">Buenos Aires, <em></em>Argentina.</em></div>
+          <div class="col-sm"><strong>2021</strong></div>
+          
+        </div>
+      </div>
     </footer>
   </body>
 </html>

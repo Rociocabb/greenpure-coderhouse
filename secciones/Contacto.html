@@ -4,7 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>contacto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,44 +38,101 @@
     <link rel="stylesheet" href="../Styles/Index.css" />
   </head>
 
-  <body class="bodyContacto">
-    <!--FORMULARIO DE REGISTRO-->
-    <h1 id="formTitle">Contacto</h1>
-    <form>
-      <fieldset>
-        <legend>Registro</legend>
-        <div>
-          <label for="Nombre">Nombre:</label>
-          <input type="text" id="Nombre" />
+  <body class="body-content">
+    <nav
+      class="navbar navbar-expand-sm navbar-light text-uppercase"
+      style="background-color: #d0d604"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../imagenes/isooriginal.png" alt="" width="120" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          id="navbarNav"
+          class="navbar-toggler"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" style="color: black" href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="color: black"
+                href="../secciones/Nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="color: black"
+                href="../secciones/recetasVegetarianas.html"
+                >Recetas</a
+              >
+            </li>
+          </ul>
         </div>
-        <br />
-        <div>
-          <label for="Email">Email:</label>
-          <input type="Email" id="Email" />
-        </div>
-        <br />
-        <div>
-          <label for="Sexo">Masculino</label>
-          <input type="radio" id="Sexo" name="Sexo" />
-          <br />
-          <label for="Sexo">Femenino</label>
-          <input type="radio" id="Sexo" name="Sexo" />
-        </div>
-        <br />
-        <div>
-          Mensaje
-          <textarea name="" id="" cols="30" rows="15"></textarea>
-        </div>
-        <br />
+      </div>
+    </nav>
 
-        <div>
-          <label for="newsletter">Inscribirme al newsletter</label>
-          <input type="checkbox" id="newsletter" name="newsletter" value="si" />
+    <!--FORMULARIO DE REGISTRO-->
+    <main>
+      <div class="container">
+        <div class="row justify-content-center mt-5 mb-5">
+          <div class="col-md-7">
+            <h1 style="text-align: center;"  >CONTACTO</h1>
+            <form>
+              <div class="row form-group">
+                <label for="nombre" class="col-form-label col-md-4"
+                  >Nombre:</label
+                >
+                <div class="col-md-8">
+                  <input
+                    type="text"
+                    name="nombre"
+                    value=""
+                    id="nombre"
+                    class="form-control"
+                  />
+                </div>
+                <div class="row form-group">
+                  <label for="email" class="col-form-label col-md-4"
+                    >Email:</label
+                  >
+                  <div class="col-md-8">
+                    <input
+                      type="email"
+                      name="email"
+                      value=""
+                      id="email"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="row form-group">
+                    <label for="mensaje" class="col-form-label col-md-4">Mensaje:</label>
+                    <div class="col-md-8">
+                      <textarea rows="6" class="form-control" id="mensaje"></textarea>
+                    </div>
+                  </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <br />
-        <input type="submit" value="Enviar" id="Buttom" />
-      </fieldset>
-    </form>
+      </div>
+    </main>
     <a href="../Index.html">Volver a inicio.</a>
   </body>
 </html>
