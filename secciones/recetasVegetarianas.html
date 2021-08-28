@@ -33,10 +33,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../styles/Recetas.css" />
+    <link rel="stylesheet" href="../css/Index.css" />
   </head>
 
-  <body class="bodyRecipes">
+  <body class="body">
     <!--Barra de navegación-inicio-->
     <header class="Header">
       <nav
@@ -81,14 +81,14 @@
       <h1 class="principalTitle text-uppercase">¡Recetas vegetarianas!</h1>
     </header>
 
-    <main class="mainRecipes">
-      <section class="SectionPrincipal" style="text-align: center">
+    <main class="sectionRecipes">
+      <section class="sectionRecipes--1" style="text-align: center">
         <!--Intro-->
-        <h2>
+        <h2 class="sectionRecipes--title">
           Aunque no estés listx para dejar las carnes, éstas recetas te van a
           encantar!
         </h2>
-        <p>
+        <p class="sectionRecipes--paragraph">
           Ser vegetariano puede ser todo un reto en el día a día: desde que vas
           al súper hasta el momento en que vas a cocinar. Y como lo sabemos muy
           bien, preparamos para ti estas recetas vegetarianas que van a enamorar
@@ -147,15 +147,59 @@
       </section>
     </main>
 
-    <!--Pie de página-->
-    <footer class="Footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">Buenos Aires, <em></em>Argentina.</em></div>
-          <div class="col-sm"><strong>2021</strong></div>
-          
-        </div>
-      </div>
-    </footer>
+    <!--pie de página-->
   </body>
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2"
+                  >Email address</label
+                >
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.6)">
+      © 2021 Copyright:
+      <a class="text-white" style="text-decoration: none" href="../index.html"
+        >Pure Green</a
+      >
+    </div>
+    <!-- Copyright -->
+  </footer>
 </html>

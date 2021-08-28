@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pure Green</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,26 +17,52 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="styles/Index.css" />
+    <link rel="stylesheet" href="css/Index.css" />
   </head>
 
   <body class="body">
-    <!--Barra de menú-->
-    <header class="headerIndex">
-      <div class="headerIndex-content">
-        <nav class="menu">
-          <img class="logo" src="imagenes/isooriginal.png" alt="" />
-          <a class="linkNav" href="secciones/Nosotros.html">NOSOTROS</a>
-          <a class="linkNav" href="secciones/recetasVegetarianas.html"
-            >RECETAS</a
+    <!--Barra de navegación-inicio-->
+    <header class="Header">
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #d0d604"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../imagenes/isooriginal.png" alt="" width="120"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-          <a class="linkNav" href="secciones/Contacto.html">CONTACTO</a>
-        </nav>
-      </div>
-    </header>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link active text-uppercase"
+                aria-current="page"
+                href="secciones/Nosotros.html"
+                >Nosotros</a
+              >
+              <a class="nav-link text-uppercase" href="secciones/recetasVegetarianas.html"
+                >Recetas</a
+              >
+              <a class="nav-link text-uppercase" href="secciones/Contacto.html"
+                >Contacto</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <!--Acá empieza la sección más importante donde se cuenta qué es el vegetarianismo y tipos-->
-    <main class="main">
+    <main class="mainIndex>
       <!--TITULO PRINCIPAL CON IMAGEN DE FONDO-->
       <div class="mainTitle">
         <h1 class="principalTitle">VEGETARIANISMO</h1>
@@ -152,8 +182,58 @@
     </main>
 
     <!--Pie de página-->
-    <footer class="footer">
-      <p>Buenos Aires, <em>Argentina</em>- <strong>2021</strong></p>
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+  
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example2" class="form-control" />
+                  <label class="form-label" for="form5Example2"
+                    >Email address</label
+                  >
+                </div>
+              </div>
+              <!--Grid column-->
+  
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.6)">
+        © 2021 Copyright:
+        <a class="text-white" style="text-decoration: none" href="../index.html"
+          >Pure Green</a
+        >
+      </div>
+      <!-- Copyright -->
     </footer>
   </body>
 </html>

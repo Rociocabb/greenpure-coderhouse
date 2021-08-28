@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+@import "variables";
+@import "componentes/pages/mixins";
+@import "componentes/header.scss";
+@import "componentes/footer.scss";
+@import "componentes/pages/home.scss";
+@import "componentes/pages/contacto.scss";
+@import "componentes/pages/nosotros.scss";
+@import "componentes/pages/recetas";
+
+//body para todas los html
+body {
+  background-color: $negro;
+  min-height: 100vh;
+  color: $blanco;
+  font-family: barlow semi condensed;
+  font-size: 1.2rem;
+}
