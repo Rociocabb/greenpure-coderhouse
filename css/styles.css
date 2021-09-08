@@ -1,36 +1,72 @@
 * {
-  margin: 0;
-  padding: 0%;
-}
+  margin: 0%;
+  padding: 0%; }
 
 body {
   background-color: black;
   color: white;
   font-family: barlow semi condensed;
-  font-size: 1.2rem;
-}
+  font-size: 1rem; }
 
 .main {
-  margin: 15px;
-  padding: 20px;
-}
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 40px;
+  text-align: center; }
+  .main--title1 {
+    margin: 1rem;
+    color: #d0d604;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 20px; }
+  .main--title {
+    color: #d0d604;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px; }
+  .main--title2 {
+    color: #d0d604;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 70px; }
+  .main--title3 {
+    color: #d0d604;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .main--title4 {
+    color: #d0d604;
+    text-transform: uppercase;
+    font-weight: bold; }
 
 .principalTitle {
-  text-align: center;
   color: #d0d604;
+  text-align: center;
+  font-size: bold;
+  margin: 10px;
   padding-top: 20px;
-}
+  padding-bottom: 20px; }
 
 .sectionRecipes--1 {
   text-align: center;
-  margin: 30px;
-}
+  margin: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center; }
 
 #galeria img {
-  width: 100%;
+  max-width: 1000px;
+  width: 350px;
   height: 250px;
-}
+  align-items: center; }
+
+#galeria .col-lg-4 {
+  margin: 0%;
+  padding: 20px; }
 
 #galeria img:hover {
-  border: 5px solid black;
-}
+  border: 5px solid black; }
+
+.textRecipe {
+  text-align: center;
+  padding-top: 10px; }

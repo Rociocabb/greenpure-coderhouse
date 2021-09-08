@@ -1,0 +1,38 @@
+.main {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 40px;
+  text-align: center;
+
+  &--title1 {
+    margin: 1rem;
+    color: $color-principal;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  &--title {
+    color: $color-principal;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+  }
+  &--title2 {
+    color: $color-principal;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 70px;
+  }
+  &--title3 {
+    color: $color-principal;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &--title4 {
+    color: $color-principal;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
