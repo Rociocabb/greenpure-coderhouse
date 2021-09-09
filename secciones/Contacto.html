@@ -4,29 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>contacto</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      src="https://kit.fontawesome.com/920088d521.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-      crossorigin="anonymous"
-    ></script>
+    <title>contacto</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -91,97 +79,136 @@
     <!--FORMULARIO DE REGISTRO-->
     <main>
       <div class="container">
-        <div class="row justify-content-center mt-5 mb-5">
-          <div class="col-md-7">
-            <h1 style="text-align: center;"  >CONTACTO</h1>
-            <form>
-              <div class="row form-group">
-                <label for="nombre" class="col-form-label col-md-4"
-                  >Nombre:</label
-                >
-                <div class="col-md-8">
-                  <input
-                    type="text"
-                    name="nombre"
-                    value=""
-                    id="nombre"
-                    class="form-control"
-                  />
-                </div>
-                <div class="row form-group">
-                  <label for="email" class="col-form-label col-md-4"
-                    >Email:</label
-                  >
-                  <div class="col-md-8">
-                    <input
-                      type="email"
-                      name="email"
-                      value=""
-                      id="email"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="row form-group">
-                    <label for="mensaje" class="col-form-label col-md-4">Mensaje:</label>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="well well-sm">
+              <form class="form-horizontal" method="post">
+                <fieldset>
+                  <legend class="text-center header">Contacto</legend>
+
+                  <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center"
+                      ><i class="far fa-user"></i
+                    ></span>
                     <div class="col-md-8">
-                      <textarea rows="6" class="form-control" id="mensaje"></textarea>
+                      <input
+                        id="nombre"
+                        name="name"
+                        type="text"
+                        placeholder="Nombre"
+                        class="form-control"
+                      />
                     </div>
                   </div>
-              </div>
-            </form>
+                  <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center"
+                      ><i class="far fa-user"></i></i
+                    ></span>
+                    <div class="col-md-8">
+                      <input
+                        id="surname"
+                        name="name"
+                        type="text"
+                        placeholder="Apellido"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center"
+                      ><i class="far fa-envelope"></i
+                    ></span>
+                    <div class="col-md-8">
+                      <input
+                        id="email"
+                        name="email"
+                        type="text"
+                        placeholder="Email"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center"
+                      ><i class="far fa-edit"></i
+                    ></span>
+                    <div class="col-md-8">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        placeholder="Escríbenos tus dudas. Te responderemos a la brevedad! :)"
+                        rows="7"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-12 text-center">
+                      <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    
-    <footer class="bg-dark text-center text-white">
+
+    <!--footer-->
+    <footer class=" text-center text-white">
       <!-- Grid container -->
       <div class="container p-4 pb-0">
-        <!-- Section: Form -->
-        <section class="">
-          <form action="">
-            <!--Grid row-->
-            <div class="row d-flex justify-content-center">
-              <!--Grid column-->
-              <div class="col-auto">
-                <p class="pt-2">
-                  <strong>Sign up for our newsletter</strong>
-                </p>
-              </div>
-              <!--Grid column-->
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
     
-              <!--Grid column-->
-              <div class="col-md-5 col-12">
-                <!-- Email input -->
-                <div class="form-outline form-white mb-4">
-                  <input type="email" id="form5Example2" class="form-control" />
-                  <label class="form-label" for="form5Example2">Email address</label>
-                </div>
-              </div>
-              <!--Grid column-->
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
     
-              <!--Grid column-->
-              <div class="col-auto">
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-outline-light mb-4">
-                  Subscribe
-                </button>
-              </div>
-              <!--Grid column-->
-            </div>
-            <!--Grid row-->
-          </form>
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
         </section>
-        <!-- Section: Form -->
+        <!-- Section: Social media -->
       </div>
       <!-- Grid container -->
     
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.6);">
-        © 2021 Copyright:
-        <a class="text-white" href="../index.html">Pure Green</a>
+      <div class="text-center p-3"><a class="text-black" href="../index.html" style="color: black;">Green Pure</a>
       </div>
       <!-- Copyright -->
     </footer>
+
+    <!--bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
