@@ -8,12 +8,6 @@ body {
   font-family: barlow semi condensed;
   font-size: 1rem; }
 
-.header {
-  color: #d0d604;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-top: 20px; }
-
 main {
   padding-bottom: 50px; }
 
@@ -95,6 +89,18 @@ main {
 .textRecipe {
   text-align: center;
   padding-top: 10px; }
+
+* {
+  margin: 0%;
+  padding: 0%; }
+
+.header {
+  color: #d0d604;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.navbar {
+  background-color: #d0d604; }
 
 .p-4 {
   background-color: black; }
