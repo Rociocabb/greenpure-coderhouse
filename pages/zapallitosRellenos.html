@@ -10,7 +10,7 @@
     <meta name="description" content="receta vegetariana de Pure Green" />
     <meta
       name="keywords"
-      content="Receta vegetariana, zapallitos, vegan, saludable"
+      content="Receta vegetariana, zapallitos, vegan, saludable, receta de zapallitos rellenos, veggie, sano"
     />
 
     <!--bootstrap css-->
@@ -30,13 +30,36 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <header class="principalTitle">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"> <img style="width: 120px;" src="../imagenes/isooriginal.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recetasVegetarianas.html">Recetas</a>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a></li>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <!--Título de la receta-->
-      <h1>Zapallitos rellenos vegetarianos, con arroz y verduras</h1>
+      <h1 class="principalTitle">Zapallitos rellenos vegetarianos, con arroz y verduras</h1>
     </header>
     <main>
       <!--Imagen e intro-->
-      <p>
+      <p style="text-align: center;">
         Hoy, para empezar la semana, vamos a hacer unos zapallitos rellenos paso
         a paso. A diferencia de otras recetas de zapallitos rellenos éstos son
         totalmente vegetarianos, ya que los vamos a rellenar con otras verduras
@@ -45,7 +68,7 @@
         de pollo, que con los zapallitos queda muy bien! Espero que se animen a
         probarlo!
       </p>
-      <img src="../imagenes/P1110359.jpg" alt="" />
+      <img class="imgRecetas" src="../imagenes/P1110359.jpg" alt="" />
       <h2>Ingredientes:</h2>
       <ul>
         <li>2 zapallitos</li>
@@ -57,8 +80,8 @@
         <li>1 cda de pan rallado</li>
         <li>Sal, pimienta y aceite</li>
       </ul>
-      <h3>Procedimiento:</h3>
-      <p>
+      <h3 style="text-align: center;">Procedimiento:</h3>
+      <p style="text-align: center;">
         1. Hervir los zapallitos enteros durante unos 10 minutos. Cuidado que
         flotan, así que a mitad de la cocción hay que darlos vuelta. Sino nos
         quedarán cocidos de un solo lado. <br />
@@ -79,7 +102,7 @@
         poner queso por encima también. Están listos!
       </p>
     </main>
-    <a href="../index.html">Volver al inicio.</a>
+
 
     <!--Pie de página-->
     <footer class="text-center text-white">
@@ -103,36 +126,12 @@
             ><i class="fab fa-twitter"></i
           ></a>
 
-          <!-- Google -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-google"></i
-          ></a>
-
           <!-- Instagram -->
           <a
             class="btn btn-outline-light btn-floating m-1"
             href="#!"
             role="button"
             ><i class="fab fa-instagram"></i
-          ></a>
-
-          <!-- Linkedin -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-
-          <!-- Github -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-github"></i
           ></a>
         </section>
         <!-- Section: Social media -->
